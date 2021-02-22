@@ -1,4 +1,4 @@
-# Notch Relay API
+# Notch Pay PHP
 
 Notch Pay PHP client
 
