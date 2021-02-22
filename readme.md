@@ -19,12 +19,14 @@ You will then need to:
 
 ## Usages
 
-To use Notch Pay api you need Business ID
+### Payments
+
+To use Notch Pay Payment api you need Business ID
 
 ```php
-use \NotchPay\NotchPay;
+use \NotchPay\Payment;
 
-$notchpay = new NotchPay('B3abc123abc123');
+$notchpay = new Payment('B3abc123abc123');
 ```
 
 Init checkout transaction (with `checkout` method):
