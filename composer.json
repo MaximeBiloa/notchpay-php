@@ -6,9 +6,17 @@
     "php": ">=5.3",
     "php-curl-class/php-curl-class": "^8.9"
   },
+  "keywords": [
+    "notchpay",
+    "payment processing",
+    "api",
+    "payment",
+    "accept money",
+    "gateway"
+  ],
   "autoload": {
     "psr-4": {
-      "NotchPay\\NotchPay\\": "src"
+      "NotchPay\\NotchPay\\": "src/"
     }
   },
   "homepage": "https://notchpay.xyz/docs",
