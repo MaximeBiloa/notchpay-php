@@ -16,10 +16,14 @@
   ],
   "autoload": {
     "psr-4": {
-      "NotchPay\\NotchPay\\": "src/"
+      "NotchPay\\": "src/"
     }
   },
-  "homepage": "https://notchpay.xyz/docs",
+  "homepage": "https://notchpay.xyz",
+  "support": {
+    "email": "support@notchpay.xyz",
+    "docs": "https://notchpay.xyz/docs"
+  },
   "authors": [
     {
       "name": "Chapdel KAMGA",
@@ -27,6 +31,9 @@
       "homepage": "http://chapdel.me"
     }
   ],
+  "config": {
+    "optimize-autoloader": true
+  },
   "prefer-stable": true,
   "minimum-stability": "dev"
 }
