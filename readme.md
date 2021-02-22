@@ -19,7 +19,7 @@ You will then need to:
 
 ## Usages
 
-To use Notch Relay Api you need API KEY
+To use Notch Pay api you need Business ID
 
 ```php
 use \NotchPay\NotchPay;
