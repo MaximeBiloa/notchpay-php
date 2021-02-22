@@ -1,6 +1,6 @@
 <?php
 
-namespace NotchPay\NotchPay;
+namespace NotchPay;
 
 /**
  * Notch Pay PHP client
