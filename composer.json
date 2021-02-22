@@ -1,0 +1,24 @@
+{
+  "name": "notchpay/notchpay-php",
+  "description": "Notch Pay PHP client",
+  "license": "MIT",
+  "require": {
+    "php": ">=5.3",
+    "php-curl-class/php-curl-class": "^8.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "NotchPay\\NotchPay\\": "src"
+    }
+  },
+  "homepage": "https://notchpay.xyz/docs",
+  "authors": [
+    {
+      "name": "Chapdel KAMGA",
+      "email": "drop@chapdel.me",
+      "homepage": "http://chapdel.me"
+    }
+  ],
+  "prefer-stable": true,
+  "minimum-stability": "dev"
+}
