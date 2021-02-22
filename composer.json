@@ -16,7 +16,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "NotchPay\\": "src/"
+      "Notchpay\\": "src/"
     }
   },
   "homepage": "https://notchpay.xyz",
