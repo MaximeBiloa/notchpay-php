@@ -9,7 +9,7 @@ Requires PHP 5.3 and higher.
 Install notchpay-php using Composer:
 
 ```
-composer require notchpay/notchpay-php
+composer require notchpay/php-sdk
 ```
 
 You will then need to:
@@ -34,7 +34,7 @@ Init checkout transaction (with `checkout` method):
 ```php
 $list_id = '1234346';
 
-$result = $notchpay->subscribe($list_id, array("amount" => 500, "currency" => "XAF", "description" => "Notch Pay checkout", "email" => "me@notchpay.test", 'phone' => "237676761582"));
+$result = $notchpay->checkout($list_id, array("amount" => 500, "currency" => "XAF", "description" => "Notch Pay checkout", "email" => "me@notchpay.test", 'phone' => "237676761582"));
 
 print_r($result);
 ```

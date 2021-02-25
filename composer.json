@@ -1,5 +1,5 @@
 {
-  "name": "notchpay/notchpay-php",
+  "name": "notchpay/php-sdk",
   "description": "Notch Pay PHP client",
   "license": "MIT",
   "require": {
@@ -19,16 +19,16 @@
       "Notchpay\\": "src/"
     }
   },
-  "homepage": "https://notchpay.xyz",
+  "homepage": "https://notchpay.co",
   "support": {
-    "email": "support@notchpay.xyz",
-    "docs": "https://notchpay.xyz/docs"
+    "email": "support@notchpay.co",
+    "docs": "https://notchpay.co/docs"
   },
   "authors": [
     {
       "name": "Chapdel KAMGA",
       "email": "drop@chapdel.me",
-      "homepage": "http://chapdel.me"
+      "homepage": "https://chapdel.me"
     }
   ],
   "config": {
