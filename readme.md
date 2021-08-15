@@ -1,6 +1,6 @@
 # Notch Pay PHP
 
-Notch Pay PHP client
+Notch Pay PHP Wrapper
 
 Requires PHP 5.3 and higher.
 
@@ -19,32 +19,108 @@ You will then need to:
 
 ## Usages
 
-### Payments
+### Transactions
 
-To use Notch Pay Payment api you need Business ID
+To use Notch Pay Transaction api you need Business ID
 
 ```php
-use \NotchPay\Payment;
+use \NotchPay\Transaction;
 
-$notchpay = new Payment('B3abc123abc123');
+$notchpay = new Transaction('B3abc123abc123');
 ```
 
-Init checkout transaction (with `checkout` method):
+#### Init checkout transaction (with `init` method):
 
 ```php
-$list_id = '1234346';
-
-$result = $notchpay->checkout($list_id, array("amount" => 500, "currency" => "XAF", "description" => "Notch Pay checkout", "email" => "me@notchpay.test", 'phone' => "237676761582"));
+$result = $notchpay->init(array("amount" => 500, "currency" => "XAF", "description" => "Notch Pay checkout", "email" => "me@notchpay.test", 'phone' => "237676761582"));
 
 print_r($result);
 ```
 
-Verify transaction (with `verify` method):
+#### Fetch transaction (with `fetch` method):
 
 ```php
 $reference = 'vy5OeXsOZQvyVxst';
 
-$result = $notchpay->verify($reference);
+$result = $notchpay->fetch($reference);
+
+print_r($result);
+```
+
+#### Cancel transaction (with `cancel` method):
+
+```php
+$reference = 'vy5OeXsOZQvyVxst';
+
+$result = $notchpay->cancel($reference);
+
+print_r($result);
+```
+
+#### Complete transaction (with `complete` method):
+
+```php
+$reference = 'vy5OeXsOZQvyVxst';
+$gateway = 'mobile';
+$data = [
+    "phone" => "+237671234567"
+]
+
+$result = $notchpay->complete($reference, $gateway, $data);
+
+print_r($result);
+```
+
+### Subscription
+
+To use Notch Pay Subscription api you need Business ID
+
+```php
+use \NotchPay\Subscription;
+
+$notchpay = new Subscription('B3abc123abc123');
+```
+
+#### Init Subscription(with `init` method):
+
+```php
+$list_id = '1234346';
+
+$result = $notchpay->init($plan_id, array("email" => "me@notchpay.test", 'phone' => "237676761582"));
+
+print_r($result);
+```
+
+#### Fetch Subscription (with `fetch` method):
+
+```php
+$reference = 'vy5OeXsOZQvyVxst';
+
+$result = $notchpay->fetch($reference);
+
+print_r($result);
+```
+
+#### Cancel Subscription (with `cancel` method):
+
+```php
+$reference = 'vy5OeXsOZQvyVxst';
+
+$result = $notchpay->cancel($reference);
+
+print_r($result);
+```
+
+#### Complete Complete (with `complete` method):
+
+```php
+$reference = 'vy5OeXsOZQvyVxst';
+$gateway = 'mobile';
+$data = [
+    "phone" => "+237671234567"
+]
+
+$result = $notchpay->complete($reference, $gateway, $data);
 
 print_r($result);
 ```

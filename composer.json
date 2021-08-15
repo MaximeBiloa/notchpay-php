@@ -1,6 +1,6 @@
 {
   "name": "notchpay/notchpay-php",
-  "description": "Notch Pay PHP client",
+  "description": "Notch Pay PHP Wrapper",
   "license": "MIT",
   "require": {
     "php": ">=5.3",
@@ -22,7 +22,7 @@
   "homepage": "https://notchpay.co",
   "support": {
     "email": "support@notchpay.co",
-    "docs": "https://notchpay.co/docs"
+    "docs": "https://docs.notchpay.co"
   },
   "authors": [
     {
