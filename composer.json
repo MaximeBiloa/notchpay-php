@@ -1,5 +1,5 @@
 {
-  "name": "notchpay/php-sdk",
+  "name": "notchpay/notchpay-php-sdk",
   "description": "Notch Pay PHP Wrapper",
   "license": "MIT",
   "require": {
