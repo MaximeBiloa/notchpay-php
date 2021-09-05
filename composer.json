@@ -12,7 +12,10 @@
     "api",
     "payment",
     "accept money",
-    "gateway"
+    "gateway",
+    "yup",
+    "orange money",
+    "mtn momo"
   ],
   "autoload": {
     "psr-4": {
