@@ -132,7 +132,7 @@ class Transaction
             throw new \Exception("business_key is required", 1);
         }
 
-        $this->curl->get($this->base_url . "/checkout" . $reference);
+        $this->curl->get($this->base_url . "/checkout/" . $reference);
 
         if ($this->curl->error) {
 
